@@ -1,0 +1,249 @@
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background: pink;
+  font-family:  Ariel, sans-serif;
+}
+
+/* Utilities ******************************************************************************************************************************************/
+
+/* Bar - Heading */
+.bar-sub-heading{
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #ccc;
+}
+/* Bar - Sub-heading */
+.bar-heading{
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15px;color: #fff;
+}
+/* Bar - right side - item */
+.nav-item{
+  display: flex;
+  margin-top: 5px;
+  text-decoration: none;
+  padding: 10px 7px;
+}
+.nav-item:hover{
+  outline: 1px solid #fff; /* outside of box*/
+}
+/* Icon arrow - down */
+.arrow-icon{
+  border-width: 4px;
+  border-color: transparent;
+  font-size: 0;
+  line-height: 0;
+  border-style: solid;
+  border-top-color: #a7acb2;
+}
+
+/* Bar - Navigation ******************************************************************************************************************************************/
+#nav-bar{
+  background:#131921;
+  width: 100%;
+  display: flex;
+}
+/* Nav LEFT ******************************************************************************************************************************************/
+.nav-left{
+  height: 60px;
+  display: flex;
+}
+
+/* Hamburger */
+.nav-ham{
+  height: 40px;
+  width: 38px;
+  margin: 10px 7px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 10px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-ham:hover{
+  border-color: #fff;
+}
+.hm-icon{
+  width: 20px;
+  height: 18px;
+  background-image: url('img/nav-sprite-global.png');
+  background-position: -136px -255px;
+}
+/* Logo */
+.nav-logo{
+  width: 165px;
+  height: 100%;
+  padding-top: 5px;
+  padding-right: 4px;
+}
+.nav-logo-link{
+  display: inline-block; /* to display border when hover */
+  height: 50px;
+  width: 100%;
+}
+.nav-logo-link:hover{
+  outline: 1px solid #fff; /* outside of box*/
+}
+.logo-img{
+  width: 97px;
+  height: 30px;
+  margin-top: 10px;
+  margin-left:10px ;
+  display: block;
+  background-image: url('img/nav-sprite-global.png');
+  background-position: -10px -51px;
+}
+
+/* Nav SEARCH ******************************************************************************************************************************************/
+.nav-search{
+  height: 100%;
+  width: 100%;
+  padding: 10px 3px;
+  background: purple;
+}
+.nav-search-bar{
+  height: 40px;
+  width: auto;
+  border-radius: 4px;
+  background: yellow;
+}
+
+/* Nav Right ******************************************************************************************************************************************/
+.nav-right{
+  height: 100%;
+  display: flex;
+  padding: 0 5px;
+}
+
+/* Languages */
+.nav-language{
+  align-items: center;
+}
+.flag-icon{
+  background-image: url('img/flags.png');
+  background-position: 0 -130px;
+  width: 24px;
+  height: 18px;
+  display: inline-block;
+  margin-right: 3px;
+}
+.nav-language .arrow-icon {
+  align-self: flex-end;
+}
+
+/* Orders */
+.nav-orders{
+  flex-direction: column; /******/
+}
+
+/* Account + lists */
+.nav-account{
+  flex-direction: column; /******/
+}
+
+/* Cart */
+.nav-cart{
+  align-items: flex-end; /**************/
+}
+.cart-icon{
+  background-image: url('img/nav-sprite-global.png');
+  display: inline-block;
+  background-position: -10px -340px;
+  width: 38px;
+  height: 26px;
+  position: relative;
+}
+.cart-icon::after{
+  position: absolute;
+    content: "0";
+    top: -4px;
+    left: 17px;
+    font-size: 17px;
+    font-weight: 700;
+    color: orange;
+}
+
+/* Bar - main ******************************************************************************************************************************************/
+
+#bar-main{
+  background:#232F3E;
+  width: 100%;
+  display: flex;
+}
+
+/* Deliver to */
+.deliver{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin: 5px;
+  padding: 5px;
+  flex:1;
+}
+.deliver:hover{
+  outline: 1px solid white;
+}
+.location-icon{
+  background-image: url('img/nav-sprite-global.png');
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-position: -68px -340px;
+}
+.deliver .text-container{
+  display: flex;
+  flex-direction: column;
+  margin-left:3px;
+}
+
+/* Center */
+.bar-main-center{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 5px;
+  margin: 5px;
+  flex:3;
+ 
+}
+
+.bar-main-center-item {
+  text-decoration: none;
+  font-weight: 700;
+  padding: 5px 10px;
+}
+.bar-main-center-item:hover {
+  outline: 1px solid #fff;
+}
+
+/* left */
+.bar-main-right{
+  display: flex;
+  align-items: center;
+  flex:1;
+}
+.covid{
+  padding: 5px 10px;
+}
+.covid:hover{
+  outline: 1px solid #fff;
+}
+
+
+
+
+
+
+
+
+
