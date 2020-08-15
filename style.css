@@ -268,7 +268,6 @@ body{
   max-width: 1500px;
   background-color: #fff;
   font-size: 13px;
-  background: green;
   padding: 0 30px;
 }
 
@@ -278,7 +277,6 @@ body{
   list-style: none;
   align-items: center;
   padding: 10px 18px;
-  background: purple;
 }
 .path-text{
   color: #565959;
@@ -303,13 +301,11 @@ body{
   width: 100%;
 }
 
-/* Product Images  ******************************************************************************************************************************************/
-/* Gallery container */
+/* Product Images  ***************/
+/* container */
 .product-gallery-container{
   display: flex;
-  background: teal;
 }
-
 /* Image Preview List */
 .images-preview-list{
   width: 40px;
@@ -325,7 +321,6 @@ body{
   border-radius: 2px;
   box-shadow: 0 0 3px 2px rgba(228,121,17,.5);
 }
-
 /* Image view */
 .image-view{
   max-height: 487px;
@@ -340,9 +335,9 @@ body{
   width: auto;
 }
 
-/* Product Content  content sec + side sec ******************************************************************************************************************************************/
+/* Product Content ******************************************************************************************************************************************/
 
-/* product content: */
+/* product content: content sec + side sec */
 .product-content-container{ 
   display: flex;
 }
@@ -350,8 +345,30 @@ body{
 /* product - Content section */
 .product-content{
   width: 100%;
-  background: pink;
   padding: 0 20px;
+}
+.product-link{
+  text-decoration: none;
+  font-size: 13px;
+  color:#0066c0;
+  cursor: pointer;
+  font-weight: 700;
+}
+.product-link:hover{
+  text-decoration: underline;
+  color: #c45500;
+}
+.product-heading{
+  font-size: 21px;
+  font-weight: 600;
+  color: #565959;
+}
+.customer-review{
+  display: flex;
+  align-items: center;
+}
+.stars-section{
+  text-decoration: none;
 }
 .stars-icon{
   background: url('img/Amazon-stars.png');
@@ -366,13 +383,101 @@ body{
   width:7px;
   height: 5px;
   background-position: -90px -5px;
+  vertical-align: text-top;
+}
+.product-ratings{
+  padding-left: 20px;
+}
+.separator-line{
+  border: 1px solid #e7e7e7;
+ 
+}
+.price{
+  margin-top: 5px;
+}
+.price-heading{
+  color: #565959 ;
+  font-weight: 700;
+  font-size: 13px;
+  padding-right: 5px;
+}
+.price-value{
+  color: #B12704 ;
+  font-weight: 700;
+  font-size: 17px;
+}
+.product-info-heading{
+  color: #0F1111 ;
+  font-weight: 700;
+  font-size: 13px;
+}
+.size-heading{
+  padding: 10px 0 5px 0;
+}
+.color{
+  padding-top:10px;
+}
+.product-info-content{
+  color: #0F1111 ;
+  font-weight: 400;
+  font-size: 13px;
+}
+.properties{
+  padding-left: 10px;
+  margin-top: 10px;
 }
 
-/* product side section*/
+/* product side section**************************************/
 .product-side{
   width: 244px;
-  background: yellow;
+  
 }
+
+.buy-section{
+  border: 1px #ddd solid;
+  border-radius: 4px;
+  padding: 15px;
+}
+
+.buy-text{
+  width:100%;
+  text-align: center;
+}
+
+.btn-cart {
+  background: linear-gradient(to bottom,#f7dfa5,#f0c14b);
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid black;
+  padding: 2px;
+  margin: 15px 0;
+}
+.btn-content{
+  display: flex;
+  align-items: center;
+}
+.btn-text{
+  margin: 0 auto;
+}
+.cart-btn-icon{
+  display: inline-block;
+  background: url('img/Amazon-stars.png');
+  height: 25px;
+  width: 25px;
+  background-position: -35px -5px;
+}
+
+.btn-Add-list{
+  width: 100%;
+  background: linear-gradient(to bottom,#f7f8fa,#e7e9ec);
+  border: 1px solid black;
+  padding: 5px;
+  margin-top: 15px;
+  border-radius: 4px;
+}
+
+
+
 
 
 
