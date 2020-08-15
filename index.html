@@ -10,9 +10,11 @@
 
 <body>
 <!-- Bars -->
-<header>
+<header class="bars-container">
+
+  <!-- Navigation Bar -->
   <div id="nav-bar">
-    <!-- Nav LEFT ---------------------------------------------------->
+    <!-- Nav LEFT -->
     <div class="nav-left">
       <!-- Hamburger -->
       <a href="#" class="nav-ham">
@@ -25,11 +27,11 @@
          </a>
       </div>      
     </div>
-      <!-- Nav SEARCH ------------------------------------------------>
+      <!-- Nav SEARCH -->
       <div class="nav-search">
         <form action="" class="nav-search-bar"></form>
       </div>
-      <!-- Nav RIGHT -------------------------------------------------->
+      <!-- Nav RIGHT -->
       <div class="nav-right">
         <!-- Languages -->
         <a href="#" class="nav-item nav-language">
@@ -51,37 +53,106 @@
         <i class="cart-icon"></i>
         <span class="bar-heading">&nbsp;Cart</span>
        </a>
-     </div>
-      
+     </div>  
   </div>
- 
+
+ <!-- Main - bar -->
   <div id="bar-main">
-
       <!-- Deliver to -->
-      <a href="#" class="deliver">
-        <i class="location-icon"></i>
-        <div class="text-container">
-          <span class="bar-sub-heading">Deliver&nbsp;to</span>
-          <span class="bar-heading">Israel</span>
-        </div>
-      </a>
+      <div class="bar-main-left">
+        <a href="#" class="deliver">
+          <i class="location-icon"></i>
+          <div class="text-container">
+            <span class="bar-sub-heading">Deliver&nbsp;to</span>
+            <span class="bar-heading">Israel</span>
+          </div>
+        </a>
 
+      </div>
+   
+      <!-- Center - option -->
     <div class="bar-main-center">
       <a href="#" class="bar-sub-heading bar-main-center-item">Today's Deals</a>
-      <a href="#" class="bar-sub-heading bar-main-center-item">Customer Service</a>
-      <a href="#" class="bar-sub-heading bar-main-center-item">Gift Cards</a>
+      <a href="#" class="bar-sub-heading bar-main-center-item">Customer&nbsp;Service</a>
+      <a href="#" class="bar-sub-heading bar-main-center-item">Gift&nbsp;Cards</a>
       <a href="#" class="bar-sub-heading bar-main-center-item">Registry</a>
       <a href="#" class="bar-sub-heading bar-main-center-item">Sell</a>
     </div>
-
+      <!-- Right - covid -->
     <div class="bar-main-right">
-      <span class="bar-heading covid">Amazon's response to COVID-19</span>
+      <span class="bar-heading covid">Amazon's&nbsp;response&nbsp;to&nbsp;COVID-19</span>
     </div>
-    
   </div>
- 
+
+    <!-- Message Bar -->
+    <div class="message-bar">
+      <span class="bar-sub-heading bar-sub-heading-dark">We are delivering to your region with limited shipping options. Please expect extended delivery time. <a href="#" class="bar-sub-heading bar-sub-heading-link">Learn more.</a></span>
+    </div>
 </header>
+
+<!--  Main container -->
+<main class="main-container">
+
+  <!-- PATH -->
+  <ul class="path">
+    <li><a href="#" class="path-text path-text-link">Clothing, Shoes & Jewelry</a></li>
+    <li class="path-text path-divider">&nbsp;>&nbsp;</li>
+    <li><a href="#" class="path-text path-text-link">Novelty & More</a></li>
+    <li class="path-text path-divider">&nbsp;>&nbsp;</li>
+    <li><a href="#" class="path-text path-text-link">Clothing</a></li>
+    <li class="path-text path-divider">&nbsp;>&nbsp;</li>
+    <li><a href="#" class="path-text path-text-link">Novelty</a></li>
+    <li class="path-text path-divider">&nbsp;>&nbsp;</li>
+    <li><a href="#" class="path-text path-text-link">Men</a></li>
+    <li class="path-text path-divider">&nbsp;>&nbsp;</li>
+    <li><a href="#" class="path-text path-text-link">Shirts</a></li>
+    <li class="path-text path-divider">&nbsp;>&nbsp;</li>
+    <li><a href="#" class="path-text path-text-link">T-Shirts</a></li>
+  </ul>
+
+<!-- Product -->
+<div class="product-container">
+
+ <!-- Product Gallery -->
+  <div class="product-gallery-container">
+    <!-- Images preview list -->
+    <ul class="images-preview-list">
+      <li class="image-preview-item"><a href="#"><img src="https://images-na.ssl-images-amazon.com/images/I/41GTZUwY4KL._AC_SR38,50_.jpg"></a></li>
+      <li class="image-preview-item"><a href="#"><img src="https://images-na.ssl-images-amazon.com/images/I/41wT7Z7rK4L._AC_SR38,50_.jpg"></a></li>
+      <li class="image-preview-item"><a href="#"><img src="https://images-na.ssl-images-amazon.com/images/I/51DfZgKHazL._AC_SR38,50_.jpg"></a></li>
+      <li class="image-preview-item"><a href="#"><img src="https://images-na.ssl-images-amazon.com/images/I/61iC5%2BlbwBL._AC_SR38,50_.jpg"></a></li>
+      <li class="image-preview-item"><a href="#"><img src="https://images-na.ssl-images-amazon.com/images/I/51rjn-y2hKL._AC_SR38,50_.jpg"></a></li>
+    </ul>
+    <!-- Image View -->
+    <div class="image-view">
+        <img class="product-image" src="https://images-na.ssl-images-amazon.com/images/I/71sqQpZ6wGL._AC_UY500_.jpg">
+    </div>
+  </div>
+
+  <!-- Product Content container = content section + ad section -->
+  <div class="product-content-container">
+
+    <!-- Product Content  -->
+    <div class="product-content">
+        <div class="title-block">
+          <a href="#" class="product-link">Brand: Retreez</a>
+          <h1 class="product-heading">Retreez Funny Computer Programmer Eat Sleep Code Repeat Printed T-Shirt Tee</h1>
+          <div class="customer-review">
+            <a href="#"><i class="stars-icon"></i><i class="arrow-icon-product"></i></a>
+            <span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product- SIDE section:  Buttons + ad section -->
+    <div class="product-side">test</div>
+      
     
+
+  </div>
+</div>
+
+</main>
 
 </body>
 </html>

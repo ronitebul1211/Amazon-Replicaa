@@ -7,12 +7,14 @@
 }
 
 body{
-  background: pink;
   font-family:  Ariel, sans-serif;
 }
 
-/* Utilities ******************************************************************************************************************************************/
-
+/* Bars - SECTION ******************************************************************************************************************************************/
+.bars-container{
+  min-width: 1000px;
+}
+/* Utilities  *********************************/
 /* Bar - Heading */
 .bar-sub-heading{
   font-size: 12px;
@@ -24,9 +26,26 @@ body{
 .bar-heading{
   font-size: 14px;
   font-weight: 700;
-  line-height: 15px;color: #fff;
+  line-height: 15px;
+  color: #fff;
 }
-/* Bar - right side - item */
+/* Bar - Sub-heading - DARK */
+.bar-sub-heading-dark{
+  color: black;
+  font-weight: 700;
+}
+/* Bar - Sub-heading - LINK */
+.bar-sub-heading-link{
+  color: #0066c0;
+  text-decoration: none;
+  font-weight: 700;
+}
+.bar-sub-heading-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #c45500;
+}
+/* Nav bar - right side - item */
 .nav-item{
   display: flex;
   margin-top: 5px;
@@ -45,14 +64,13 @@ body{
   border-style: solid;
   border-top-color: #a7acb2;
 }
-
-/* Bar - Navigation ******************************************************************************************************************************************/
+/* Bar - Navigation **************************/
 #nav-bar{
   background:#131921;
   width: 100%;
   display: flex;
 }
-/* Nav LEFT ******************************************************************************************************************************************/
+/* Nav LEFT */
 .nav-left{
   height: 60px;
   display: flex;
@@ -174,21 +192,22 @@ body{
 }
 
 /* Bar - main ******************************************************************************************************************************************/
-
 #bar-main{
   background:#232F3E;
   width: 100%;
   display: flex;
 }
-
 /* Deliver to */
+.bar-main-left{
+  flex: 1;
+}
 .deliver{
   display: flex;
   align-items: center;
   text-decoration: none;
   margin: 5px;
   padding: 5px;
-  flex:1;
+  width: min-content;
 }
 .deliver:hover{
   outline: 1px solid white;
@@ -214,9 +233,7 @@ body{
   padding: 5px;
   margin: 5px;
   flex:3;
- 
 }
-
 .bar-main-center-item {
   text-decoration: none;
   font-weight: 700;
@@ -225,7 +242,6 @@ body{
 .bar-main-center-item:hover {
   outline: 1px solid #fff;
 }
-
 /* left */
 .bar-main-right{
   display: flex;
@@ -234,10 +250,130 @@ body{
 }
 .covid{
   padding: 5px 10px;
+  margin-right: 5px;
 }
 .covid:hover{
   outline: 1px solid #fff;
 }
+/* Bar - Message ******************************************************************************************************************************************/
+.message-bar{
+  background: #d8f7eb;
+  padding: 14px 18px;
+}
+
+/* Main container ******************************************************************************************************************************************/
+.main-container{
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1500px;
+  background-color: #fff;
+  font-size: 13px;
+  background: green;
+  padding: 0 30px;
+}
+
+/* Path  ******************************************************************************************************************************************/
+.path{
+  display: flex;
+  list-style: none;
+  align-items: center;
+  padding: 10px 18px;
+  background: purple;
+}
+.path-text{
+  color: #565959;
+  font-size:12px;
+}
+.path-divider{
+  align-self: flex-end;
+  font-weight: 600;
+  margin: 0 5px;
+}
+.path-text-link{
+  text-decoration: none;
+  font-weight: 500;
+}
+.path-text-link:hover{
+  text-decoration: underline;
+}
+
+/* Product  ******************************************************************************************************************************************/
+.product-container{
+  display: flex;
+  width: 100%;
+}
+
+/* Product Images  ******************************************************************************************************************************************/
+/* Gallery container */
+.product-gallery-container{
+  display: flex;
+  background: teal;
+}
+
+/* Image Preview List */
+.images-preview-list{
+  width: 40px;
+  list-style: none;
+  margin-top: 15px;
+}
+.image-preview-item{
+  border: 0.5px solid #565959;
+  margin-top: 5px;
+}
+.image-preview-item:hover{
+  border: 1px solid #e77600;
+  border-radius: 2px;
+  box-shadow: 0 0 3px 2px rgba(228,121,17,.5);
+}
+
+/* Image view */
+.image-view{
+  max-height: 487px;
+  max-width: 375px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product-image{
+  margin: 20px;
+  height: 100%;
+  width: auto;
+}
+
+/* Product Content  content sec + side sec ******************************************************************************************************************************************/
+
+/* product content: */
+.product-content-container{ 
+  display: flex;
+}
+
+/* product - Content section */
+.product-content{
+  width: 100%;
+  background: pink;
+  padding: 0 20px;
+}
+.stars-icon{
+  background: url('img/Amazon-stars.png');
+  display: inline-block;
+  width: 80px;
+  height: 18px;
+  background-position: -21px -368px;
+}
+.arrow-icon-product{
+  background: url('img/Amazon-stars.png');
+  display: inline-block;
+  width:7px;
+  height: 5px;
+  background-position: -90px -5px;
+}
+
+/* product side section*/
+.product-side{
+  width: 244px;
+  background: yellow;
+}
+
 
 
 
